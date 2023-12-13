@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "sport": "spot",
+    "docs": "spot docs ./api/api.ts"
+  },
   "dependencies": {
     "@airtasker/spot": "^1.13.0"
   }
