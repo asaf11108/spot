@@ -21,7 +21,7 @@ class CreateUser {
 
 interface CreateUserRequest {
   firstName: String;
-  lastName: String;
+  lastName?: String;
 }
 
 interface CreateUserResponse {
