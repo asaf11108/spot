@@ -1,9 +1,12 @@
 {
   "scripts": {
     "sport": "spot",
-    "docs": "spot docs ./api/api.ts"
+    "docs": "spot docs ./api/api.ts",
+    "generate": "spot generate --contract api/api.ts --language json --generator openapi3 --out output/",
+    "gen": "openapi-generator-cli generate -g typescript-angular -i ./output/api.json -o ./ts"
   },
   "dependencies": {
-    "@airtasker/spot": "^1.13.0"
+    "@airtasker/spot": "^1.13.0",
+    "@openapitools/openapi-generator-cli": "^2.7.0"
   }
 }
