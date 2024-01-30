@@ -5,7 +5,7 @@
     "lint": "spot lint ./api/api.ts",
     "mock": "spot mock ./api/api.ts",
     "generate:openapi": "spot generate --contract api/api.ts --language json --generator openapi3 --out ./openapi",
-    "generate:code": "openapi-generator-cli generate -g typescript-rxjs -i ./output/api.json -o ./code"
+    "generate:code": "openapi-generator-cli generate -g spring -i ./openapi/api.json -o ./code"
   },
   "dependencies": {
     "@airtasker/spot": "^1.13.0",
